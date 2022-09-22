@@ -22,11 +22,20 @@ Y listo, podrás utilizar dicho comando.
 % git add .			// Guardar todos los archivos en "cached"
 % git add historia.txt		// Guardar el archivo historia.txt en "cached"
 % git rm --cached historia.txt	// Eliminar el archivo historia.txt de "cached" 
-% git commit -m"Este es el primer commit del curso"  
+% git commit -m"Este es el primer commit del curso"  	//Si no se agrega mensaje sale error. 
+							//Se debe agregar mensaje y para salir-> ESC+Shift+Z+Z
 
 % git config					// Muestra todas opciones de configuración de Git y la descripción
 % git config --list				// Muestra la configuración actual en lista
 % git config --list --show-origin		// Muestra la ubicación actual de cada configuración
 % git config --global user.name "Juan H"	// Cambiar nombre de usuario
 % git config --global user.email "j@g.com"	// Cambiar correo de usuario
+
+% git show historia.txt										// Ver cambios en el archivo historia.txt
+% git log historia.txt										// Ver historial de commit
+% git diff 79e8e0c296e8e1f2d61f97987e10366ec3b31f8e cac80c097fdf1554490680dc065f132e9b9ac26c 	//ver diferencias entre dos commit
+% git reset e7ada4748c9daf8268ec2ce3b088e1be61b39fc6 -- hard 					// Reset duro, TODO vuelve al estado indicado
+% git reset e7ada4748c9daf8268ec2ce3b088e1be61b39fc6 -- soft					// Reset suave, Vuelve al estado indicado menos lo que se tenga en staging
+
+
 
