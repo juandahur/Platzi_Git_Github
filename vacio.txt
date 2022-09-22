@@ -1,0 +1,24 @@
+Mensaje secreto
+$ pwd			// Ver dirección carpeta actual
+$ ls -al		// Ver todos los archivos de la carpeta, incluyendo ocultos
+
+% mkdir proyecto1	// Crear carpeta
+% cd proyecto1		// Abrir carpeta
+% touch vacio.txt 	// Crear archivo vacío
+% cat vacio.txt 	// Abrir archivo en consola
+% history 		// Ver historial de comandos
+% !350			// Ejecutar de nuevo el comando #350
+% rm vacio.txt 		// Borrar archivo vacio.txt
+% rm --help		// Ayuda comando
+
+¿No te funciona el comando code en tu terminal?
+Abre Visual Studio Code
+Presiona cmd + shift + p ó si estás en windows ctrl + shift + p
+Busca una opción que diga lo siguiente: Shell Command: Install 'code' command in $PATH
+Selecciónala
+Y listo, podrás utilizar dicho comando.
+
+% git init			// Iniciar git en la carpeta
+% git add .			// Guardar todos los archivos en "cached"
+% git add historia.txt		// Guardar el archivo historia.txt en "cached"
+% git rm --cached historia.txt	// Eliminar el archivo historia.txt de "cached"   
