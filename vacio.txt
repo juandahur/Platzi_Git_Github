@@ -21,4 +21,12 @@ Y listo, podrás utilizar dicho comando.
 % git init			// Iniciar git en la carpeta
 % git add .			// Guardar todos los archivos en "cached"
 % git add historia.txt		// Guardar el archivo historia.txt en "cached"
-% git rm --cached historia.txt	// Eliminar el archivo historia.txt de "cached"   
+% git rm --cached historia.txt	// Eliminar el archivo historia.txt de "cached" 
+% git commit -m"Este es el primer commit del curso"  
+
+% git config					// Muestra todas opciones de configuración de Git y la descripción
+% git config --list				// Muestra la configuración actual en lista
+% git config --list --show-origin		// Muestra la ubicación actual de cada configuración
+% git config --global user.name "Juan H"	// Cambiar nombre de usuario
+% git config --global user.email "j@g.com"	// Cambiar correo de usuario
+
