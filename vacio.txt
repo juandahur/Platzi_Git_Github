@@ -25,6 +25,7 @@ Y listo, podrás utilizar dicho comando.
 % git rm --force		// Elimina los archivos de Git y del disco duro.
 % git commit -m"Este es el primer commit del curso"  	//Si no se agrega mensaje sale error. 
 							//Se debe agregar mensaje y para salir-> ESC+Shift+Z+Z
+git commit -am ""		Hacer add y commit al mismo tiempo. Solo se puede hacer en archivos que ya tienen al menos un commit
 
 % git config					// Muestra todas opciones de configuración de Git y la descripción
 % git config --list				// Muestra la configuración actual en lista
@@ -41,18 +42,21 @@ Y listo, podrás utilizar dicho comando.
 % git log --stat										// Ver cambios 
 % git checkout cac80c097fdf1554490680dc065f132e9b9ac26c historia.txt				// Ver una version anterior de un archivo con el número de commit 
 % git checkout main historia.txt								// Volver al estado del archivo de la rama main (Se puede llamar MASTER)
+% git checkout 850243ac11d999b5d272614e49c6e04e6dfde07e 					// llevar el HEAD a un commit 850243
 
 % git clone url			// Clonar repositorio remoto
 % git push			// traer copia del repositorio remoto al repositorio local y al directorio de trabajo, push = fetch + merge
 % git fetch			// traer copia del repositorio remoto al repositorio local
 % git merge			// Traer copia del repositorio local al directorio de trabajo
+% git merge --abort 		// Revertir un merge
+% git merge <branch>		// Llevar a la rama actual todo lo de la rama "branch"
+% git branch <nombre>		// Crear un nuevo branch/rama
 
-
-
-
-
-
-
+% git remote add origin URL	// 1. Guardar la URL del repositorio de GitHub con el nombre de origin
+% git remote			// 2. Verificar que la URL se haya guardado correctamente
+% git remote -v
+% git pull origin master --allow-unrelated-histories 	// 3. Traer la versión del repositorio remoto y hacer merge para crear un commit con los archivos de ambas partes
+% git push origin master 	// 4. Por último, ahora sí podemos hacer git push para guardar los cambios de nuestro repositorio local en GitHub
 
 
 LOG
